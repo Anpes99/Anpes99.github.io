@@ -1,0 +1,152 @@
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+h1{flex-shrink: 0;
+padding-right: 1rem;
+}
+
+a:link { text-decoration: none;
+}
+
+
+.header{
+    background-color: black;
+    color:whitesmoke;
+display:flex;
+justify-content:space-around;
+flex-direction: column;
+align-items:center;
+width:100%;
+height: 6rem;
+padding: 0 5rem 0 5rem;
+flex-wrap:nowrap;
+border:0;
+position: sticky;
+z-index: 10;
+top: 0;
+box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+ .childdiv{
+ display:flex;
+ flex-direction:column;
+  background-color:black;
+  justify-content:space-around;
+  align-items:center;
+  
+  }
+p{background-color:red}
+body {
+    background-image:url("./content/blackwhite_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ .main{
+  height:100rem;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  }
+  .mainChild1{
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+
+.introduction{
+    align-self: center;
+    padding-top: 5rem;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+
+  .mainChild1Child1Carousel{
+
+    display: flex;
+    justify-content: center;
+    flex: 0 1 50rem;
+    height: 440px;
+  }
+
+  #carouselExampleControls{
+    align-self:center;
+    flex:1 1 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .carousel-inner{
+      height: 30rem;
+      width: 50rem;
+      display: flex;
+      align-items: center;
+  }
+
+  .mainChild1Child1{
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .mainChild1Child2{
+  flex-grow: 1;
+  flex-shrink: 3;
+}
+   .mainchild2{
+  flex-grow:1;
+  }
+
+.footer{
+    width: 100%;
+    height: 0.5rem;
+    border-style: solid;
+    border-width: 0 0;
+    border-top-width: 1px;
+    border-color: black;
+    
+}
+.carousel-item :active{
+         
+    border-style: ridge ;
+    border-color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .welcomeText{
+      height: 10rem;
+  }
+ .span3{
+ align-self:flex-end;
+ color:green;
+ }
+ .mainChild1Child2{
+     display: none;
+ }
+ .mainChild1Child1Carousel{
+  flex-basis:100%;
+  height: 50%;
+
+}
+.carousel-inner{
+    height: 15rem;
+    width: 100%;
+}
+  
+.welcomeText{
+    padding-top: 3rem;
+}
+}
+
